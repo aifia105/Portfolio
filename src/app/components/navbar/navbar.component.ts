@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   
- menu :boolean =true;
+ menu :boolean =false;
 
  openMenu(){
   this.menu = !this.menu;
