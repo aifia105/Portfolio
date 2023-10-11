@@ -46,3 +46,21 @@
     animation: slideInFromTop 1.95s ease-in-out;
   }
 
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track (the empty space in which the scrollbar sits) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
