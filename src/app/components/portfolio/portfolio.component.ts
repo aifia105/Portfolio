@@ -10,6 +10,10 @@ export class PortfolioComponent {
   
   constructor(private activatedRoute: ActivatedRoute) {}
 
-
+ projects = {
+  name : "project name",
+  description : "description",
+  image : "assets/exemple1.png"
+ }
 
 }
