@@ -1,15 +1,15 @@
 <nav>
     <div class="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 ">
         <div>
-            <img src="assets/logo.png" alt="logo" class="w-[70px] h-[70px] " />
+            <img src="assets/logo.png" alt="logo" class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] " />
         </div>
         <div>
             <ul class="hidden md:flex uppercase">
-                <li class="text-sm text-blue-500"><a href="#home">Home</a></li>
-                <li class="text-sm hover:text-blue-500"><a href="#about">About</a></li>
-                <li class="text-sm hover:text-blue-500"><a href="#skills">Skills</a></li>
-                <li class="text-sm hover:text-blue-500"><a href="#portfolio">Projects</a></li>
-                <li class="text-sm hover:text-blue-500"><a href="#contact">Contact</a></li>
+                <li class="text-md text-blue-500"><a href="#home">Home</a></li>
+                <li class="text-md hover:text-blue-500"><a href="#about">About</a></li>
+                <li class="text-md hover:text-blue-500"><a href="#skills">Skills</a></li>
+                <li class="text-md hover:text-blue-500"><a href="#portfolio">Projects</a></li>
+                <li class="text-md hover:text-blue-500"><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
@@ -29,29 +29,29 @@
 
         <div *ngIf="menu" class=" md:hidden absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center">
             <ul>
-                <li (click)="openMenu()" class="py-6 text-xl uppercase  hover:text-blue-500"><a href="#home">Home</a></li>
-                <li (click)="openMenu()" class="py-6 text-xl uppercase  hover:text-blue-500"><a href="#about">About</a></li>
-                <li (click)="openMenu()" class="py-6 text-xl uppercase  hover:text-blue-500"><a href="#skills">Skills</a></li>
-                <li (click)="openMenu()" class="py-6 text-xl uppercase  hover:text-blue-500"><a href="#portfolio">Projects</a></li>
-                <li (click)="openMenu()" class="py-6 text-xl uppercase  hover:text-blue-500"><a href="#contact">Contact</a></li>
+                <li (click)="openMenu()" class="py-6 text-lg uppercase  hover:text-blue-500"><a href="#home">Home</a></li>
+                <li (click)="openMenu()" class="py-6 text-lg uppercase  hover:text-blue-500"><a href="#about">About</a></li>
+                <li (click)="openMenu()" class="py-6 text-lg uppercase  hover:text-blue-500"><a href="#skills">Skills</a></li>
+                <li (click)="openMenu()" class="py-6 text-lg uppercase  hover:text-blue-500"><a href="#portfolio">Projects</a></li>
+                <li (click)="openMenu()" class="py-6 text-lg uppercase  hover:text-blue-500"><a href="#contact">Contact</a></li>
             </ul>
             <div class="pt-40">
-                <p class="uppercase tracking-widest text-blue-500"> Let's Connect</p>
-                <div class="flex items-center justify-between my-4 w-full sm:w-[80%]">
+                <p class="uppercase items-center justify-center tracking-widest text-blue-500"> Let's Connect</p>
+                <div class="flex items-center justify-between gap-3 my-4 w-full sm:w-[80%]">
                     <a  href="https://www.linkedin.com/in/aifia-mohamed-amine-02b5941a4"
-                    class="rounded-full shadow-md shadow-blue-900  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    class="rounded-full shadow shadow-blue-900  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/aifia105"
-                    class="rounded-full shadow-md shadow-blue-900  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    class="rounded-full shadow shadow-blue-900  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                         <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="mailto:mohamedaifia34@gmail.com"
-                    class="rounded-full shadow-md shadow-blue-800  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    class="rounded-full shadow shadow-blue-800  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
                     <a href="assets/Aifia-Mohamed-Amine-CV.pdf" download="Aifia-Mohamed-Amine-CV.pdf"
-                    class="rounded-full shadow-md shadow-blue-900  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    class="rounded-full shadow shadow-blue-900  p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                         <i class="fa-solid fa-file-lines"></i>
                     </a>
                 </div>
