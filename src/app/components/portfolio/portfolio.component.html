@@ -1,44 +1,54 @@
-<div class="w-full md:h-screen text-gray-300 bg-[#0a192f]">
+<div class="w-full h-screen text-gray-300 bg-[#0a192f]">
     <div class="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div class="pb-8">
             <p class="text-4xl font-bold inline border-b-4 border-blue-500">Projects</p>
             <p class="py-4">Some Things I've Built:</p>
         </div>
 
-            <div class="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
+            <div class="grid sm:grid-cols-1  md:grid-cols-1 gap-4">
 
                 <div class="bg-[#0a192f] w-full h-full shadow-lg shadow-gray-950 rounded-md p-2 group">
-                    <div>
-                        <img src="assets/onlineshop/1.PNG" class="w-full h-full"   loading="lazy" priority>
+                    <div class="relative">
+                        <img [src]="currerntImage" class="w-full h-full"   loading="lazy" priority>
+                        <div>
+                            <button class="absolute top-1/2 left-0 transform -translate-y-1/2  bg-transparent text-gray-700 rounded-full h-7 w-7 flex items-center justify-center" (click)="changeImage('prev')" >
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-transparent text-gray-700 rounded-full h-7 w-7 flex items-center justify-center" (click)="changeImage('next')" >
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
                        
                     </div>
                     <div class="pt-3 pb-3 px-4">
                         <a href="#">
                             <h4 class="font-medium text-xl mb-2 text-white hover:text-blue-500 transition">OnlineShop</h4>
                         </a>
-                        <div class="flex items-baseline mb-1 space-x-2">
-                            <p class="text-sm ext-gray-400 text-primary font-semibold">E-commerce web application with admin panel and stock management</p>
-                          
+                        <div class="flex gap-5">
+                            <div class=" items-baseline mb-1 space-x-2">
+                                <p class="text-sm text-primary font-semibold">E-commerce website for online shopping</p>
+                                <div>
+                                <p class="text-sm text-gray-400 text-primary font-semibold">Development of UI from scratch</p>
+                                <p class="text-sm text-gray-400 text-primary font-semibold">Development of ain feature required</p>
+                                <p class="text-sm text-gray-400 text-primary font-semibold">Development of the frontend  </p>
+                                <p class="text-sm text-gray-400 text-primary font-semibold">Development the backend API and the database</p>
+                                <p class="text-sm text-gray-400 text-primary font-semibold">Implementation of SwaggerUI for the API definition  </p>
+                                </div>
+                              
+                            </div>
+                            <div>
+                                <span class="text-sm  text-primary font-semibold">Technologies used:</span><br>
+                                <span class="text-sm text-gray-400 text-primary font-semibold">Angular, Spring Boot, Spring JPA, Spring security, TailwindCSS, SwaggerUI, MySQL, RestAPI</span>
+                            </div>
                         </div>
                         
                     </div>
-                   <div class="flex items-center justify-between px-4">
-                    <a href="#" class="block px-2  py-1 text-center font-semibold text-white bg-blue-500 border border-blue-500 rounded-md hover:bg-transparent hover:text-blue-500 transition">View demo</a>
+                   <div class=" px-4 pb-2">
                     <a href="https://github.com/aifia105/Ecommerce-Shop" class="block px-2 py-1 text-center font-semibold text-white bg-blue-500 border border-blue-500 rounded-md hover:bg-transparent hover:text-blue-500 transition">Github</a>
                    </div>
                 </div>
-
-               
-
-                
-
-
-                
-
-                
-
-
-
             </div>
     </div>
 

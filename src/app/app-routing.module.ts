@@ -13,7 +13,8 @@ const routes: Routes = [
   {path: "portfolio", data: {breadcrumb:"Portfolio"}, component: PortfolioComponent},
   {path: "about", data: {breadcrumb:"About"}, component: AboutComponent},
   {path: "skills", data: {breadcrumb:"Skills"}, component: SkillsComponent},
-  {path: "contact", data: {breadcrumb:"Contact"}, component: ContactComponent}
+  {path: "contact", data: {breadcrumb:"Contact"}, component: ContactComponent},
+  {path: "**", redirectTo: "home"}
 
 ];
 
